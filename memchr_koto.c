@@ -5,10 +5,10 @@ int main(void)
 {
 	char c = 't';
 	size_t n = 4;
-	char s1[] = "koto";
+	char s1[] = "";
 	char s2[] = "kotokoto";
-	char s3[] = "";
-	char s4[] = " ";
+	char s3[] = "koto";
+	char s4[] = "nezuko";
 	char s5[] = "        ";
 	int result_flg = 1;
 

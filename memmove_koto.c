@@ -5,7 +5,7 @@
 
 int main()
 {
-	size_t n = 4;
+	size_t n = 5;
 	char dst1[] = "hamigaki";
 	char dst2[] = "hamigaki";
 	char src[] = "kotoyori";
