@@ -4,7 +4,7 @@
 int main(void)
 {
 	char c = 't';
-	int n = 4;
+	size_t n = 4;
 	char s1[] = "koto";
 	char s2[] = "kotokoto";
 	char s3[] = "";
@@ -13,7 +13,7 @@ int main(void)
 	int result_flg = 1;
 
 	printf("c : %c\n",c);
-	printf("n : %d\n",n);
+	printf("n : %zu\n",n);
 	printf("s:%10s, ft_memchr:%10s , og_memchr:%10s , issame:%d\n", s1, ft_memchr(s1,c,n), memchr(s1,c,n), (ft_memchr(s1,c,n) == memchr(s1,c,n) ? 1 : 0));
 	printf("s:%10s, ft_memchr:%10s , og_memchr:%10s , issame:%d\n", s2, ft_memchr(s2,c,n), memchr(s2,c,n), (ft_memchr(s2,c,n) == memchr(s2,c,n) ? 1 : 0));
 	printf("s:%10s, ft_memchr:%10s , og_memchr:%10s , issame:%d\n", s3, ft_memchr(s3,c,n), memchr(s3,c,n), (ft_memchr(s3,c,n) == memchr(s3,c,n) ? 1 : 0));

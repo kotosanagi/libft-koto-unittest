@@ -4,8 +4,8 @@
 
 int main()
 {
-	char str1[] = "minakami";
-	char str2[] = "minakami";
+	char str1[] = "kotoyori";
+	char str2[] = "kotoyori";
 	int i;
 	int len = strlen(str1);
 	int result_flg = 1;
@@ -16,10 +16,12 @@ int main()
 		printf("str[%d]:%c, %c\n",i, str1[i], str2[i]);
 	}
 
-	int trim = 3;
-	ft_bzero(str1, trim);
+	size_t trim = 3;
 	bzero(str2, trim);
-	printf("=====================\n");
+	printf("=========og_bzero is done============\n");
+
+	ft_bzero(str1, trim);
+	printf("=========ft_bzero is done============\n");
 	for (i = 0; i < len; i++)
 	{
 		printf("str[%d]:%c, %c, issame:%d\n",i, str1[i], str2[i], (str1[i] == str2[i]) ? 1 : 0);

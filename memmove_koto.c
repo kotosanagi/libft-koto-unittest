@@ -5,7 +5,7 @@
 
 int main()
 {
-	int n = 2;
+	size_t n = 4;
 	char dst1[] = "hamigaki";
 	char dst2[] = "hamigaki";
 	char src[] = "kotoyori";
@@ -19,8 +19,11 @@ int main()
 		printf("%d:%c %c %c\n",i, src[i], dst1[i], dst2[i]);
 	}
 
-	ft_memmove(dst1, src, n);
+printf("===before exec====\n");
 	memmove(dst2, src, n);
+printf("===og is done====\n");
+	ft_memmove(dst1, src, n);
+printf("===ft is done====\n");
 
 	for (i = 0; i < len; i++)
 	{

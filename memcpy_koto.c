@@ -26,9 +26,12 @@ int main()
 		write(1, "\n", 1);
 	}
 
-	int n = 2;
-	ft_memcpy(dst1, src, n);
+	size_t n = 4;
+	write(1, "====before exec====\n", 20);
 	memcpy(dst2, src, n);
+	write(1, "====og is done ====\n", 20);
+	ft_memcpy(dst1, src, n);
+	write(1, "====ft is done ====\n", 20);
 
 
 	for (i = 0; i < len; i++)

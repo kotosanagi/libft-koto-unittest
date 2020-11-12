@@ -4,11 +4,11 @@
 
 int main(void)
 {
-	int arg_count = 10;
+	size_t arg_count = 5;
 	int *p_ft;
 
 	p_ft = (int *)ft_calloc(arg_count, sizeof(int));
-	for (int i = 0; i < arg_count; i++){
+	for (size_t i = 0; i < arg_count; i++){
 		write(1, &p_ft[i], 1);
 	}
 	free(p_ft);

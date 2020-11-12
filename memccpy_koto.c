@@ -7,15 +7,24 @@ int main()
 	char dst2[] = "kotoyori";
 	char src[] = "pokemon.";
 	char c = 'e';
-	int n = 7;
+	size_t n = 8;
 
-	printf("n      : %d\n", n);
+	printf("n      : %zu\n", n);
 	printf("c      : %c\n", c);
 	printf("src    : %s\n", src);
 	printf("dst_ft : %s\n", dst1);
 	printf("dst_og : %s\n", dst2);
-	printf("ft_memcpy     : %s\n", ft_memccpy(dst1, src, c, n));
+
+printf("====before exec====\n");
+
 	printf("origin_memcpy : %s\n", memccpy(dst2, src, c, n));
+
+printf("====og is done====\n");
+
+	printf("ft_memcpy     : %s\n", ft_memccpy(dst1, src, c, n));
+
+printf("====ft is done====\n");
+
 	printf("dst_ft : %s\n", dst1);
 	printf("dst_og : %s\n", dst2);
 

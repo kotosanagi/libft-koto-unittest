@@ -5,7 +5,7 @@
 int main(void)
 {
 	int num = 4; ////////////////////////////////////////
-	int len = 3; ////////////////////////////////////////
+	size_t len = 3; ////////////////////////////////////////
 	unsigned char c = '-';
 
 	int result_flg = 1;
@@ -14,12 +14,12 @@ int main(void)
 	char s21[] = "kotoyori";
 	char s22[] = "kotoyori";
 
-	printf("ft : %10s -> ", s11);
-	ft_memset(s11 + num, c, len);
-	printf("%10s , ", s11);
 	printf("og : %10s -> ", s12);
 	memset(s12 + num, c, len);
 	printf("%10s , ", s12);
+	printf("ft : %10s -> ", s11);
+	ft_memset(s11 + num, c, len);
+	printf("%10s , ", s11);
 	printf("issame : %d\n", (strcmp(s11, s12) == 0 ? 1 : 0));
 
 	printf("ft : %10s -> ", s21);

@@ -14,11 +14,11 @@ int main()
 	char src1[] = "von";
 	unsigned long ft_res_tmp;
 	unsigned long og_res_tmp;
-	int i = 0;
-	ft_res_tmp = ft_strlcat(dst11, src1, i);
+	size_t i = 0;
 	og_res_tmp = strlcat(dst12, src1, i);
+	ft_res_tmp = ft_strlcat(dst11, src1, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst11, dst12) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst11:%10s, dst12:%10s, src1:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst11:%10s, dst12:%10s, src1:%10s, issame:%d\n",
 		i, strlen(dst11), ft_res_tmp, og_res_tmp, dst11, dst12, src1, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -30,7 +30,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst21, src2, i);
 	og_res_tmp = strlcat(dst22, src2, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst21, dst22) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst21:%10s, dst22:%10s, src2:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst21:%10s, dst22:%10s, src2:%10s, issame:%d\n",
 		i, strlen(dst21), ft_res_tmp, og_res_tmp, dst21, dst22, src2, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -42,7 +42,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst31, src3, i);
 	og_res_tmp = strlcat(dst32, src3, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst31, dst32) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst31:%10s, dst32:%10s, src3:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst31:%10s, dst32:%10s, src3:%10s, issame:%d\n",
 		i, strlen(dst31), ft_res_tmp, og_res_tmp, dst31, dst32, src3, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -54,7 +54,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst41, src4, i);
 	og_res_tmp = strlcat(dst42, src4, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst41, dst42) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst41:%10s, dst42:%10s, src4:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst41:%10s, dst42:%10s, src4:%10s, issame:%d\n",
 		i, strlen(dst41), ft_res_tmp, og_res_tmp, dst41, dst42, src4, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -66,7 +66,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst51, src5, i);
 	og_res_tmp = strlcat(dst52, src5, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst51, dst52) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst51:%10s, dst52:%10s, src5:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst51:%10s, dst52:%10s, src5:%10s, issame:%d\n",
 		i, strlen(dst51), ft_res_tmp, og_res_tmp, dst51, dst52, src5, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -78,7 +78,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst61, src6, i);
 	og_res_tmp = strlcat(dst62, src6, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst61, dst62) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst61:%10s, dst62:%10s, src6:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst61:%10s, dst62:%10s, src6:%10s, issame:%d\n",
 		i, strlen(dst61), ft_res_tmp, og_res_tmp, dst61, dst62, src6, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -90,7 +90,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst71, src7, i);
 	og_res_tmp = strlcat(dst72, src7, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst71, dst72) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst71:%10s, dst72:%10s, src7:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst71:%10s, dst72:%10s, src7:%10s, issame:%d\n",
 		i, strlen(dst71), ft_res_tmp, og_res_tmp, dst71, dst72, src7, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -102,7 +102,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst81, src8, i);
 	og_res_tmp = strlcat(dst82, src8, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst81, dst82) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst81:%10s, dst82:%10s, src8:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst81:%10s, dst82:%10s, src8:%10s, issame:%d\n",
 		i, strlen(dst81), ft_res_tmp, og_res_tmp, dst81, dst82, src8, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -114,7 +114,7 @@ int main()
 	ft_res_tmp = ft_strlcat(dst91, src9, i);
 	og_res_tmp = strlcat(dst92, src9, i);
 	result_tmp = (ft_res_tmp == og_res_tmp && (strcmp(dst91, dst92) == 0)) ? 1 : 0;
-	printf("dstsize:%2d, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst91:%10s, dst92:%10s, src9:%10s, issame:%d\n",
+	printf("dstsize:%2zu, len_dst:%2lu, ft_ret:%2lu, ori_ret:%2lu, dst91:%10s, dst92:%10s, src9:%10s, issame:%d\n",
 		i, strlen(dst91), ft_res_tmp, og_res_tmp, dst91, dst92, src9, result_tmp);
 	if (result_flg && !(result_tmp))
 		result_flg = 0;
@@ -129,10 +129,10 @@ int main()
 	// char src10[] = "von";
 	// i = 11;
 	// // printf("ft  i:%d, %lu\n",i,ft_strlcat(dst101, src10, i));
-	// printf("dstsize:%2d, len_dst:%2lu,  ft_ret:%2lu, dst101:%10s, src10:%10s\n",
+	// printf("dstsize:%2zu, len_dst:%2lu,  ft_ret:%2lu, dst101:%10s, src10:%10s\n",
 	// i, strlen(dst101), ft_strlcat(dst101, src10, i), dst101, src10);
 	// // printf("ori i:%d, %lu\n",i,strlcat(dst102, src10, i));
-	// printf("dstsize:%2d, len_dst:%2lu, ori_ret:%2lu, dst101:%10s, src10:%10s\n",
+	// printf("dstsize:%2zu, len_dst:%2lu, ori_ret:%2lu, dst101:%10s, src10:%10s\n",
 	// i, strlen(dst102), strlcat(dst102, src10, i), dst102, src10);
 	return 0;
 }
